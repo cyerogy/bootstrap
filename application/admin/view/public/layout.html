@@ -16,28 +16,30 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="__LIB__/metisMenu/metisMenu.min.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="__JS__/admin.js"></script>
+    <script src="__JS__/left.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+            </div>
+            <!-- /.navbar-header -->
+            <include file="admin@public/top" />
+            <!-- /.navbar-top-links -->
+            <include file="admin@public/left" />
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper" style="min-height: 477px;">
+            {__CONTENT__}
         </div>
-        <!-- /.navbar-header -->
-        <include file="admin@public/top" />
-        <!-- /.navbar-top-links -->
-        <include file="admin@public/left" />
-        <!-- /.navbar-static-side -->
-    </nav>
-    <div id="page-wrapper">
-        <div class="content">{__CONTENT__}</div>
     </div>
 </body>
 
